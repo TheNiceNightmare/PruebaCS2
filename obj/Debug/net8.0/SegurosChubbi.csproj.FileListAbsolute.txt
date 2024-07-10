@@ -8,6 +8,9 @@ C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Segur
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\SegurosChubbi.pdb
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\EPPlus.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\EPPlus.System.Drawing.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
@@ -18,9 +21,12 @@ C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Micro
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\System.Runtime.Caching.dll
@@ -41,6 +47,8 @@ C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runti
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.csproj.AssemblyReference.cache
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.GeneratedMSBuildEditorConfig.editorconfig
@@ -50,6 +58,7 @@ C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\Segur
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.RazorAssemblyInfo.cache
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.RazorAssemblyInfo.cs
+C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\SegurosChubbi.sourcelink.json
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Usuario\Documents\Trabajo\PruebaAC\SegurosChubbi\obj\Debug\net8.0\staticwebassets\msbuild.SegurosChubbi.Microsoft.AspNetCore.StaticWebAssets.props

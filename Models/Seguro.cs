@@ -7,5 +7,6 @@
         public string Codigo { get; set; }
         public decimal SumaAsegurada { get; set; }
         public decimal Prima { get; set; }
+        public int AseguradoId { get; set; }
     }
 }

@@ -1,31 +1,56 @@
-﻿@model dynamic
+﻿@model IEnumerable<dynamic>
+
 @{
     ViewData["Title"] = "Resultado de la Consulta";
 }
 
 <h2>Resultado de la Consulta</h2>
 
-@if (Model is List<Seguro>)
+@if (Model.FirstOrDefault() is SegurosChubbi.Models.Seguro)
 {
-    <h3>Seguros:</h3>
-    <ul>
-        @foreach (var seguro in Model)
-        {
-            <li>@seguro.Nombre - @seguro.Codigo - @seguro.SumaAsegurada - @seguro.Prima</li>
-        }
-    </ul>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Código</th>
+                <th>Suma Asegurada</th>
+                <th>Prima</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Codigo</td>
+                    <td>@item.SumaAsegurada</td>
+                    <td>@item.Prima</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
-else if (Model is List<Asegurado>)
+else if (Model.FirstOrDefault() is SegurosChubbi.Models.Asegurado)
 {
-    <h3>Asegurados:</h3>
-    <ul>
-        @foreach (var asegurado in Model)
-        {
-            <li>@asegurado.Cedula - @asegurado.Nombre - @asegurado.Telefono - @asegurado.Edad</li>
-        }
-    </ul>
-}
-else
-{
-    <p>No se encontraron resultados.</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Cedula</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Telefono</td>
+                    <td>@item.Edad</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }

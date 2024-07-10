@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Asegurado>
+﻿@model IEnumerable<SegurosChubbi.Models.Asegurado>
 
 @{
     ViewData["Title"] = "Asegurados";
@@ -8,6 +8,7 @@
 
 <p>
     <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Asegurado</a>
+    <a asp-action="Upload" class="btn btn-secondary">Cargar Archivo</a>
 </p>
 
 <table class="table">

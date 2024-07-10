@@ -7,5 +7,6 @@
         public string Nombre { get; set; }
         public string Telefono { get; set; }
         public int Edad { get; set; }
+        public int SeguroId { get; set; }
     }
 }
