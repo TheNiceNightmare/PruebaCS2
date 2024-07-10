@@ -1,0 +1,31 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Resultado de la Consulta";
+}
+
+<h2>Resultado de la Consulta</h2>
+
+@if (Model is List<Seguro>)
+{
+    <h3>Seguros:</h3>
+    <ul>
+        @foreach (var seguro in Model)
+        {
+            <li>@seguro.Nombre - @seguro.Codigo - @seguro.SumaAsegurada - @seguro.Prima</li>
+        }
+    </ul>
+}
+else if (Model is List<Asegurado>)
+{
+    <h3>Asegurados:</h3>
+    <ul>
+        @foreach (var asegurado in Model)
+        {
+            <li>@asegurado.Cedula - @asegurado.Nombre - @asegurado.Telefono - @asegurado.Edad</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No se encontraron resultados.</p>
+}

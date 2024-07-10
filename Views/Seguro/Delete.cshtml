@@ -1,0 +1,41 @@
+﻿@model Seguro
+
+@{
+    ViewData["Title"] = "Eliminar Seguro";
+}
+
+<h2>Eliminar Seguro</h2>
+
+<h3>¿Está seguro de que desea eliminar este seguro?</h3>
+
+<div>
+    <h4>@Model.Nombre</h4>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Código
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Codigo
+        </dd>
+        <dt class="col-sm-2">
+            Suma Asegurada
+        </dt>
+        <dd class="col-sm-10">
+            @Model.SumaAsegurada
+        </dd>
+        <dt class="col-sm-2">
+            Prima
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Prima
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SeguroId" />
+        <div class="form-group">
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>

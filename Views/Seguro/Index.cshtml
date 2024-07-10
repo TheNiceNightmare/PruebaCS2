@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Seguro>
+
+@{
+    ViewData["Title"] = "Seguros";
+}
+
+<h2>Seguros</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Seguro</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Código</th>
+            <th>Suma Asegurada</th>
+            <th>Prima</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var seguro in Model)
+        {
+            <tr>
+                <td>@seguro.Nombre</td>
+                <td>@seguro.Codigo</td>
+                <td>@seguro.SumaAsegurada</td>
+                <td>@seguro.Prima</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@seguro.SeguroId" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@seguro.SeguroId" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

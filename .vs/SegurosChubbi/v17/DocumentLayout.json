@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AseguradoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AseguradoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
+              "RelativeToolTip": "Controllers\\AseguradoController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAwwGEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:45:36.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeguroController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeguroController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
+              "RelativeToolTip": "Controllers\\SeguroController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAwwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:45:45.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwF8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:42:22.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

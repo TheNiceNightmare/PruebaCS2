@@ -1,0 +1,34 @@
+﻿@model Seguro
+
+@{
+    ViewData["Title"] = "Editar Seguro";
+}
+
+<h2>Editar Seguro</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="SeguroId" />
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Codigo" class="control-label"></label>
+        <input asp-for="Codigo" class="form-control" />
+        <span asp-validation-for="Codigo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SumaAsegurada" class="control-label"></label>
+        <input asp-for="SumaAsegurada" class="form-control" />
+        <span asp-validation-for="SumaAsegurada" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Prima" class="control-label"></label>
+        <input asp-for="Prima" class="form-control" />
+        <span asp-validation-for="Prima" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Guardar" class="btn btn-primary" />
+    </div>
+</form>
