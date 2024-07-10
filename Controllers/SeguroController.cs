@@ -43,6 +43,11 @@ public class SeguroController : Controller
     [HttpPost]
     public IActionResult Create(Seguro seguro)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(seguro);
+        }
+
         string query = "INSERT INTO Seguros (Nombre, Codigo, SumaAsegurada, Prima) VALUES (@Nombre, @Codigo, @SumaAsegurada, @Prima)";
         SqlParameter[] parameters = new SqlParameter[]
         {
@@ -66,6 +71,11 @@ public class SeguroController : Controller
         };
 
         DataTable dt = _dbHelper.ExecuteQuery(query, parameters);
+        if (dt.Rows.Count == 0)
+        {
+            return NotFound();
+        }
+
         DataRow row = dt.Rows[0];
 
         Seguro seguro = new Seguro
@@ -83,6 +93,11 @@ public class SeguroController : Controller
     [HttpPost]
     public IActionResult Edit(Seguro seguro)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(seguro);
+        }
+
         string query = "UPDATE Seguros SET Nombre = @Nombre, Codigo = @Codigo, SumaAsegurada = @SumaAsegurada, Prima = @Prima WHERE SeguroId = @SeguroId";
         SqlParameter[] parameters = new SqlParameter[]
         {
@@ -99,6 +114,34 @@ public class SeguroController : Controller
     }
 
     public IActionResult Delete(int id)
+    {
+        string query = "SELECT * FROM Seguros WHERE SeguroId = @SeguroId";
+        SqlParameter[] parameters = new SqlParameter[]
+        {
+            new SqlParameter("@SeguroId", id)
+        };
+
+        DataTable dt = _dbHelper.ExecuteQuery(query, parameters);
+        if (dt.Rows.Count == 0)
+        {
+            return NotFound();
+        }
+
+        DataRow row = dt.Rows[0];
+        Seguro seguro = new Seguro
+        {
+            SeguroId = (int)row["SeguroId"],
+            Nombre = row["Nombre"].ToString(),
+            Codigo = row["Codigo"].ToString(),
+            SumaAsegurada = (decimal)row["SumaAsegurada"],
+            Prima = (decimal)row["Prima"]
+        };
+
+        return View(seguro);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public IActionResult DeleteConfirmed(int id)
     {
         string query = "DELETE FROM Seguros WHERE SeguroId = @SeguroId";
         SqlParameter[] parameters = new SqlParameter[]

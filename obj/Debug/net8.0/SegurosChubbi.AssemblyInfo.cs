@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SegurosChubbi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a61ff6cba3865977abbe6e79a7915c525ba71b06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdb529e60874016cbb1c6126f8cd7ea1364354e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SegurosChubbi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SegurosChubbi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

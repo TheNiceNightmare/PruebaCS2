@@ -46,6 +46,12 @@ public class AseguradoController : Controller
     [HttpPost]
     public IActionResult Create(Asegurado asegurado, int[] segurosSeleccionados)
     {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Seguros = GetSegurosSelectList();
+            return View(asegurado);
+        }
+
         string query = "INSERT INTO Asegurados (Cedula, Nombre, Telefono, Edad) VALUES (@Cedula, @Nombre, @Telefono, @Edad)";
         SqlParameter[] parameters = new SqlParameter[]
         {
@@ -57,28 +63,18 @@ public class AseguradoController : Controller
 
         _dbHelper.ExecuteNonQuery(query, parameters);
 
-        try
-        {
-            int aseguradoId = GetLastInsertedId();
+        int aseguradoId = GetLastInsertedId();
 
-            // Asignar seguros al asegurado
-            foreach (var seguroId in segurosSeleccionados)
+        foreach (var seguroId in segurosSeleccionados)
+        {
+            string assignSeguroQuery = "INSERT INTO AseguradoSeguro (AseguradoId, SeguroId) VALUES (@AseguradoId, @SeguroId)";
+            SqlParameter[] assignParameters = new SqlParameter[]
             {
-                string assignSeguroQuery = "INSERT INTO AseguradoSeguro (AseguradoId, SeguroId) VALUES (@AseguradoId, @SeguroId)";
-                SqlParameter[] assignParameters = new SqlParameter[]
-                {
-                    new SqlParameter("@AseguradoId", aseguradoId),
-                    new SqlParameter("@SeguroId", seguroId)
-                };
+                new SqlParameter("@AseguradoId", aseguradoId),
+                new SqlParameter("@SeguroId", seguroId)
+            };
 
-                _dbHelper.ExecuteNonQuery(assignSeguroQuery, assignParameters);
-            }
-        }
-        catch (InvalidOperationException ex)
-        {
-            ModelState.AddModelError(string.Empty, ex.Message);
-            ViewBag.Seguros = GetSegurosSelectList();
-            return View(asegurado);
+            _dbHelper.ExecuteNonQuery(assignSeguroQuery, assignParameters);
         }
 
         return RedirectToAction(nameof(Index));
@@ -147,6 +143,12 @@ public class AseguradoController : Controller
     [HttpPost]
     public IActionResult Edit(Asegurado asegurado, int[] segurosSeleccionados)
     {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Seguros = GetSegurosSelectList();
+            return View(asegurado);
+        }
+
         string query = "UPDATE Asegurados SET Cedula = @Cedula, Nombre = @Nombre, Telefono = @Telefono, Edad = @Edad WHERE AseguradoId = @AseguradoId";
         SqlParameter[] parameters = new SqlParameter[]
         {
@@ -185,6 +187,34 @@ public class AseguradoController : Controller
 
     public IActionResult Delete(int id)
     {
+        string query = "SELECT * FROM Asegurados WHERE AseguradoId = @AseguradoId";
+        SqlParameter[] parameters = new SqlParameter[]
+        {
+            new SqlParameter("@AseguradoId", id)
+        };
+
+        DataTable dt = _dbHelper.ExecuteQuery(query, parameters);
+        if (dt.Rows.Count == 0)
+        {
+            return NotFound();
+        }
+
+        DataRow row = dt.Rows[0];
+        Asegurado asegurado = new Asegurado
+        {
+            AseguradoId = (int)row["AseguradoId"],
+            Cedula = row["Cedula"].ToString(),
+            Nombre = row["Nombre"].ToString(),
+            Telefono = row["Telefono"].ToString(),
+            Edad = (int)row["Edad"]
+        };
+
+        return View(asegurado);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public IActionResult DeleteConfirmed(int id)
+    {
         string query = "DELETE FROM Asegurados WHERE AseguradoId = @AseguradoId";
         SqlParameter[] parameters = new SqlParameter[]
         {
@@ -193,12 +223,12 @@ public class AseguradoController : Controller
 
         _dbHelper.ExecuteNonQuery(query, parameters);
 
-        // Eliminar relaciones en AseguradoSeguro
         string deleteRelationQuery = "DELETE FROM AseguradoSeguro WHERE AseguradoId = @AseguradoId";
         SqlParameter[] deleteRelationParameters = new SqlParameter[]
         {
             new SqlParameter("@AseguradoId", id)
         };
+
         _dbHelper.ExecuteNonQuery(deleteRelationQuery, deleteRelationParameters);
 
         return RedirectToAction(nameof(Index));

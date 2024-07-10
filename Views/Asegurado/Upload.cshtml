@@ -2,12 +2,70 @@
     ViewData["Title"] = "Carga Masiva de Asegurados";
 }
 
-<h2>Carga Masiva de Asegurados</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e0; /* Fondo verde claro */
+        }
 
-<form asp-action="Upload" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="file">Seleccione un archivo</label>
-        <input type="file" name="file" class="form-control" />
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #2b5d2b; /* Verde oscuro para las etiquetas */
+        }
+
+        .form-control {
+            border-radius: 4px; /* Bordes redondeados en los campos de formulario */
+            border-color: #c6e2c6; /* Verde claro en los bordes de los campos */
+        }
+
+            .form-control:focus {
+                border-color: #4caf50; /* Verde oscuro en el enfoque del campo */
+                box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25); /* Sombra verde claro en el enfoque */
+            }
+
+        .btn-primary {
+            background-color: #4caf50; /* Verde para el botón de subir */
+            border-color: #4caf50;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049; /* Verde oscuro al pasar el ratón sobre el botón */
+                border-color: #3e8e41;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <form asp-action="Upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Seleccione un archivo</label>
+                <input type="file" name="file" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Subir</button>
+        </form>
     </div>
-    <button type="submit" class="btn btn-primary">Subir</button>
-</form>
+</body>
+</html>

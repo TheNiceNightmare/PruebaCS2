@@ -1,41 +1,102 @@
-﻿@model Asegurado
+﻿@model SegurosChubbi.Models.Asegurado
 
 @{
     ViewData["Title"] = "Eliminar Asegurado";
 }
 
-<h2>Eliminar Asegurado</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e0; /* Fondo suave verde claro */
+        }
 
-<h3>¿Está seguro de que desea eliminar este asegurado?</h3>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
 
-<div>
-    <h4>@Model.Nombre</h4>
-    <dl class="row">
-        <dt class="col-sm-2">
-            Cédula
-        </dt>
-        <dd class="col-sm-10">
-            @Model.Cedula
-        </dd>
-        <dt class="col-sm-2">
-            Teléfono
-        </dt>
-        <dd class="col-sm-10">
-            @Model.Telefono
-        </dd>
-        <dt class="col-sm-2">
-            Edad
-        </dt>
-        <dd class="col-sm-10">
-            @Model.Edad
-        </dd>
-    </dl>
+        h2, h3 {
+            color: #2b5d2b; /* Verde oscuro para los encabezados */
+            margin-bottom: 20px; /* Espacio debajo de los encabezados */
+        }
 
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="AseguradoId" />
-        <div class="form-group">
-            <input type="submit" value="Eliminar" class="btn btn-danger" />
-            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        h4 {
+            color: #2a6a2a; /* Verde medio para el nombre */
+            margin-bottom: 15px; /* Espacio debajo del nombre */
+        }
+
+        .btn-danger {
+            background-color: #d9534f; /* Rojo para eliminar */
+            border-color: #d9534f;
+        }
+
+        .btn-secondary {
+            background-color: #5bc0de; /* Azul claro para cancelar */
+            border-color: #46b8da;
+        }
+
+        .form-group {
+            margin-top: 20px; /* Espacio arriba del formulario */
+        }
+
+            .form-group a {
+                color: #ffffff; /* Color blanco para el texto del botón de cancelar */
+                text-decoration: none; /* Sin subrayado en el texto del botón */
+            }
+
+                .form-group a:hover {
+                    text-decoration: underline; /* Subrayado en el hover para el botón de cancelar */
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <h3>¿Está seguro de que desea eliminar este asegurado?</h3>
+
+        <div>
+            <h4>@Model.Nombre</h4>
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Cédula
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Cedula
+                </dd>
+                <dt class="col-sm-2">
+                    Teléfono
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Telefono
+                </dd>
+                <dt class="col-sm-2">
+                    Edad
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Edad
+                </dd>
+            </dl>
+
+            <form asp-action="DeleteConfirmed" method="post">
+                <input type="hidden" asp-for="AseguradoId" />
+                <div class="form-group">
+                    <input type="submit" value="Eliminar" class="btn btn-danger" />
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
+    </div>
+</body>
+</html>

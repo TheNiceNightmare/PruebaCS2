@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\seguro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\seguro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\seguro\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\seguro\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\seguro\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\seguro\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\seguro\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\seguro\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\home\\resultadoconsulta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\home\\resultadoconsulta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\asegurado\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\asegurado\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\asegurado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\asegurado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\asegurado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\asegurado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\asegurado\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\asegurado\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\asegurado\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\asegurado\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\models\\seguro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:models\\seguro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\aseguradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\data\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:data\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\models\\asegurado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\data\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:data\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|c:\\users\\usuario\\documents\\trabajo\\pruebaac\\seguroschubbi\\controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D27A4BF2-48A0-4B00-94D6-B57A86B293A1}|SegurosChubbi.csproj|solutionrelative:controllers\\segurocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,25 +99,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResultadoConsulta.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\ResultadoConsulta.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ResultadoConsulta.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\ResultadoConsulta.cshtml",
-              "RelativeToolTip": "Views\\Home\\ResultadoConsulta.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAhAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Seguro\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Index.cshtml",
+              "RelativeToolTip": "Views\\Seguro\\Index.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAgwHAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T15:25:16.493Z",
+              "WhenOpened": "2024-07-10T17:29:36.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Seguro\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Seguro\\Edit.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAUwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:28:56.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Seguro\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Create.cshtml",
+              "RelativeToolTip": "Views\\Seguro\\Create.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAUwFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:27:39.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Upload.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asegurado\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Upload.cshtml",
+              "RelativeToolTip": "Views\\Asegurado\\Upload.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwDgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:22:51.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Seguro\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Seguro\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Seguro\\Delete.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAUwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:52:48.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:23:56.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SqlDbHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Data\\SqlDbHelper.cs",
+              "RelativeDocumentMoniker": "Data\\SqlDbHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Data\\SqlDbHelper.cs",
+              "RelativeToolTip": "Data\\SqlDbHelper.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAIwDUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:24:36.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Asegurado\\Create.cshtml",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Create.cshtml",
               "RelativeToolTip": "Views\\Asegurado\\Create.cshtml",
-              "ViewState": "AQIAABEAAAAAAAAAAADwvywAAAAgAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAUwIgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-10T13:51:37.989Z",
               "EditorCaption": ""
@@ -85,6 +203,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ResultadoConsulta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\ResultadoConsulta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ResultadoConsulta.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\ResultadoConsulta.cshtml",
+              "RelativeToolTip": "Views\\Home\\ResultadoConsulta.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAgwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T15:25:16.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asegurado\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Asegurado\\Edit.cshtml",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAUwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:21:14.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asegurado\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Index.cshtml",
+              "RelativeToolTip": "Views\\Asegurado\\Index.cshtml",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAUwIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:46:06.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AseguradoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AseguradoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
+              "RelativeToolTip": "Controllers\\AseguradoController.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAA6wOoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:22:02.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asegurado\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Asegurado\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Asegurado\\Delete.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:31:51.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SeguroController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeguroController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
+              "RelativeToolTip": "Controllers\\SeguroController.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAUwJwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:24:16.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Seguro.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Models\\Seguro.cs",
               "RelativeDocumentMoniker": "Models\\Seguro.cs",
@@ -97,7 +293,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:13:30.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:14:02.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Asegurado.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Models\\Asegurado.cs",
               "RelativeDocumentMoniker": "Models\\Asegurado.cs",
@@ -105,51 +327,11 @@
               "RelativeToolTip": "Models\\Asegurado.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:39:38.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:39:38.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SqlDbHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Data\\SqlDbHelper.cs",
-              "RelativeDocumentMoniker": "Data\\SqlDbHelper.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Data\\SqlDbHelper.cs",
-              "RelativeToolTip": "Data\\SqlDbHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:24:36.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAswFIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:23:56.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AseguradoController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AseguradoController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\AseguradoController.cs",
-              "RelativeToolTip": "Controllers\\AseguradoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:22:02.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -157,21 +339,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:41:07.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SeguroController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SeguroController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Trabajo\\PruebaAC\\SegurosChubbi\\Controllers\\SeguroController.cs",
-              "RelativeToolTip": "Controllers\\SeguroController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAkwHEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:24:16.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:41:07.221Z"
             }
           ]
         }

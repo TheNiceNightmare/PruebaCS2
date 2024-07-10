@@ -1,34 +1,90 @@
-﻿@model Seguro
+﻿@model SegurosChubbi.Models.Seguro
 
 @{
     ViewData["Title"] = "Editar Seguro";
 }
 
-<h2>Editar Seguro</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8f4; /* Fondo verde muy claro */
+        }
 
-<form asp-action="Edit">
-    <input type="hidden" asp-for="SeguroId" />
-    <div class="form-group">
-        <label asp-for="Nombre" class="control-label"></label>
-        <input asp-for="Nombre" class="form-control" />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-color: #ced4da;
+            border-radius: 4px; /* Bordes redondeados para los campos de entrada */
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); /* Sombra sutil en los campos de entrada */
+        }
+
+        .btn-primary {
+            background-color: #28a745; /* Verde para el botón de guardar */
+            border-color: #28a745;
+        }
+
+            .btn-primary:hover {
+                background-color: #218838; /* Verde más oscuro al pasar el ratón */
+                border-color: #1e7e34;
+            }
+
+        .text-danger {
+            color: #dc3545; /* Rojo para los mensajes de error */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="SeguroId" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Codigo" class="control-label"></label>
+                <input asp-for="Codigo" class="form-control" />
+                <span asp-validation-for="Codigo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SumaAsegurada" class="control-label"></label>
+                <input asp-for="SumaAsegurada" class="form-control" />
+                <span asp-validation-for="SumaAsegurada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prima" class="control-label"></label>
+                <input asp-for="Prima" class="form-control" />
+                <span asp-validation-for="Prima" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="Codigo" class="control-label"></label>
-        <input asp-for="Codigo" class="form-control" />
-        <span asp-validation-for="Codigo" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="SumaAsegurada" class="control-label"></label>
-        <input asp-for="SumaAsegurada" class="form-control" />
-        <span asp-validation-for="SumaAsegurada" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Prima" class="control-label"></label>
-        <input asp-for="Prima" class="form-control" />
-        <span asp-validation-for="Prima" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Guardar" class="btn btn-primary" />
-    </div>
-</form>
+</body>
+</html>

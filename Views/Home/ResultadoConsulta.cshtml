@@ -4,53 +4,110 @@
     ViewData["Title"] = "Resultado de la Consulta";
 }
 
-<h2>Resultado de la Consulta</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e0; /* Fondo verde claro */
+        }
 
-@if (Model.FirstOrDefault() is SegurosChubbi.Models.Seguro)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Código</th>
-                <th>Suma Asegurada</th>
-                <th>Prima</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Nombre</td>
-                    <td>@item.Codigo</td>
-                    <td>@item.SumaAsegurada</td>
-                    <td>@item.Prima</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else if (Model.FirstOrDefault() is SegurosChubbi.Models.Asegurado)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Cédula</th>
-                <th>Nombre</th>
-                <th>Teléfono</th>
-                <th>Edad</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Cedula</td>
-                    <td>@item.Nombre</td>
-                    <td>@item.Telefono</td>
-                    <td>@item.Edad</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: #4caf50; /* Verde para el encabezado de la tabla */
+            color: #ffffff; /* Texto blanco en el encabezado */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* Línea divisoria sutil */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Fila alternante gris claro */
+        }
+
+        tbody tr:hover {
+            background-color: #d0e0d6; /* Fila resaltada en verde claro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        @if (Model.FirstOrDefault() is SegurosChubbi.Models.Seguro)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Código</th>
+                        <th>Suma Asegurada</th>
+                        <th>Prima</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nombre</td>
+                            <td>@item.Codigo</td>
+                            <td>@item.SumaAsegurada</td>
+                            <td>@item.Prima</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else if (Model.FirstOrDefault() is SegurosChubbi.Models.Asegurado)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Cedula</td>
+                            <td>@item.Nombre</td>
+                            <td>@item.Telefono</td>
+                            <td>@item.Edad</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</body>
+</html>

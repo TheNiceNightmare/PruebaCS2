@@ -4,31 +4,92 @@
     ViewData["Title"] = "Editar Asegurado";
 }
 
-<h2>Editar Asegurado</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e0; /* Fondo verde claro */
+        }
 
-<form asp-action="Edit">
-    <input type="hidden" asp-for="AseguradoId" />
-    <div class="form-group">
-        <label asp-for="Cedula" class="control-label"></label>
-        <input asp-for="Cedula" class="form-control" />
-        <span asp-validation-for="Cedula" class="text-danger"></span>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        .form-group label {
+            color: #2a6a2a; /* Verde medio para las etiquetas */
+        }
+
+        .form-control {
+            border-color: #c3e6cb; /* Borde verde claro para los campos de entrada */
+            box-shadow: none; /* Sin sombra en los campos de entrada */
+        }
+
+            .form-control:focus {
+                border-color: #2b5d2b; /* Borde verde oscuro en el foco */
+                box-shadow: 0 0 0 0.2rem rgba(43, 93, 43, 0.25); /* Sombra verde claro en el foco */
+            }
+
+        .btn-primary {
+            background-color: #4caf50; /* Verde para el botón de guardar */
+            border-color: #4caf50;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049; /* Verde oscuro al pasar el ratón sobre el botón */
+                border-color: #3e8e41;
+            }
+
+        .text-danger {
+            color: #dc3545; /* Rojo para los mensajes de error de validación */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="AseguradoId" />
+            <div class="form-group">
+                <label asp-for="Cedula" class="control-label"></label>
+                <input asp-for="Cedula" class="form-control" />
+                <span asp-validation-for="Cedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" class="form-control" />
+                <span asp-validation-for="Edad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="Nombre" class="control-label"></label>
-        <input asp-for="Nombre" class="form-control" />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Telefono" class="control-label"></label>
-        <input asp-for="Telefono" class="form-control" />
-        <span asp-validation-for="Telefono" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Edad" class="control-label"></label>
-        <input asp-for="Edad" class="form-control" />
-        <span asp-validation-for="Edad" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Guardar" class="btn btn-primary" />
-    </div>
-</form>
+</body>
+</html>

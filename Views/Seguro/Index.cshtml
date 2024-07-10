@@ -1,38 +1,112 @@
-﻿@model IEnumerable<Seguro>
+﻿@model IEnumerable<SegurosChubbi.Models.Seguro>
 
 @{
     ViewData["Title"] = "Seguros";
 }
 
-<h2>Seguros</h2>
-
-<p>
-    <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Seguro</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Código</th>
-            <th>Suma Asegurada</th>
-            <th>Prima</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var seguro in Model)
-        {
-            <tr>
-                <td>@seguro.Nombre</td>
-                <td>@seguro.Codigo</td>
-                <td>@seguro.SumaAsegurada</td>
-                <td>@seguro.Prima</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@seguro.SeguroId" class="btn btn-warning">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@seguro.SeguroId" class="btn btn-danger">Eliminar</a>
-                </td>
-            </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5f2; /* Fondo verde muy claro */
         }
-    </tbody>
-</table>
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+        }
+
+        .btn-primary {
+            background-color: #28a745; /* Verde para el botón de agregar nuevo */
+            border-color: #28a745;
+        }
+
+            .btn-primary:hover {
+                background-color: #218838; /* Verde más oscuro al pasar el ratón */
+                border-color: #1e7e34;
+            }
+
+        .btn-warning {
+            background-color: #ffc107; /* Amarillo para el botón de editar */
+            border-color: #ffc107;
+        }
+
+            .btn-warning:hover {
+                background-color: #e0a800; /* Amarillo más oscuro al pasar el ratón */
+                border-color: #d39e00;
+            }
+
+        .btn-danger {
+            background-color: #dc3545; /* Rojo para el botón de eliminar */
+            border-color: #dc3545;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333; /* Rojo más oscuro al pasar el ratón */
+                border-color: #bd2130;
+            }
+
+        .table {
+            background-color: #ffffff; /* Fondo blanco para la tabla */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+            .table th {
+                background-color: #e9ecef; /* Fondo gris claro para los encabezados de la tabla */
+                color: #495057; /* Gris oscuro para el texto */
+            }
+
+            .table td {
+                vertical-align: middle; /* Alineación vertical de las celdas */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Seguro</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Código</th>
+                    <th>Suma Asegurada</th>
+                    <th>Prima</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var seguro in Model)
+                {
+                    <tr>
+                        <td>@seguro.Nombre</td>
+                        <td>@seguro.Codigo</td>
+                        <td>@seguro.SumaAsegurada</td>
+                        <td>@seguro.Prima</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@seguro.SeguroId" class="btn btn-warning">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@seguro.SeguroId" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

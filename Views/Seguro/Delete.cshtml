@@ -1,41 +1,101 @@
-﻿@model Seguro
+﻿@model SegurosChubbi.Models.Seguro
 
 @{
     ViewData["Title"] = "Eliminar Seguro";
 }
 
-<h2>Eliminar Seguro</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8f4; /* Fondo verde muy claro */
+        }
 
-<h3>¿Está seguro de que desea eliminar este seguro?</h3>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
 
-<div>
-    <h4>@Model.Nombre</h4>
-    <dl class="row">
-        <dt class="col-sm-2">
-            Código
-        </dt>
-        <dd class="col-sm-10">
-            @Model.Codigo
-        </dd>
-        <dt class="col-sm-2">
-            Suma Asegurada
-        </dt>
-        <dd class="col-sm-10">
-            @Model.SumaAsegurada
-        </dd>
-        <dt class="col-sm-2">
-            Prima
-        </dt>
-        <dd class="col-sm-10">
-            @Model.Prima
-        </dd>
-    </dl>
+        h2, h3 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+        }
 
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="SeguroId" />
-        <div class="form-group">
-            <input type="submit" value="Eliminar" class="btn btn-danger" />
-            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin-bottom: 10px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545; /* Rojo para el botón de eliminar */
+            border-color: #dc3545;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333; /* Rojo más oscuro al pasar el ratón */
+                border-color: #c82333;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d; /* Gris para el botón de cancelar */
+            border-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268; /* Gris más oscuro al pasar el ratón */
+                border-color: #5a6268;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <h3>¿Está seguro de que desea eliminar este seguro?</h3>
+
+        <div>
+            <h4>@Model.Nombre</h4>
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Código
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Codigo
+                </dd>
+                <dt class="col-sm-2">
+                    Suma Asegurada
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.SumaAsegurada
+                </dd>
+                <dt class="col-sm-2">
+                    Prima
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Prima
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="SeguroId" />
+                <div class="form-group">
+                    <input type="submit" value="Eliminar" class="btn btn-danger" />
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
+    </div>
+</body>
+</html>

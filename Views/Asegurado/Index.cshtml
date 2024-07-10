@@ -4,36 +4,130 @@
     ViewData["Title"] = "Asegurados";
 }
 
-<h2>Asegurados</h2>
-
-<p>
-    <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Asegurado</a>
-    <a asp-action="Upload" class="btn btn-secondary">Cargar Archivo</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Cédula</th>
-            <th>Nombre</th>
-            <th>Teléfono</th>
-            <th>Edad</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var asegurado in Model)
-        {
-            <tr>
-                <td>@asegurado.Cedula</td>
-                <td>@asegurado.Nombre</td>
-                <td>@asegurado.Telefono</td>
-                <td>@asegurado.Edad</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@asegurado.AseguradoId" class="btn btn-warning">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@asegurado.AseguradoId" class="btn btn-danger">Eliminar</a>
-                </td>
-            </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SegurosChubbi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e0; /* Fondo verde claro */
         }
-    </tbody>
-</table>
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        h2 {
+            color: #2b5d2b; /* Verde oscuro para el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        .btn-primary {
+            background-color: #4caf50; /* Verde para el botón de agregar */
+            border-color: #4caf50;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049; /* Verde oscuro al pasar el ratón sobre el botón */
+                border-color: #3e8e41;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d; /* Gris para el botón de cargar archivo */
+            border-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268; /* Gris oscuro al pasar el ratón sobre el botón */
+                border-color: #545b62;
+            }
+
+        .btn-warning {
+            background-color: #ffc107; /* Amarillo para el botón de editar */
+            border-color: #ffc107;
+        }
+
+            .btn-warning:hover {
+                background-color: #e0a800; /* Amarillo oscuro al pasar el ratón sobre el botón */
+                border-color: #d39e00;
+            }
+
+        .btn-danger {
+            background-color: #dc3545; /* Rojo para el botón de eliminar */
+            border-color: #dc3545;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333; /* Rojo oscuro al pasar el ratón sobre el botón */
+                border-color: #bd2130;
+            }
+
+        .table {
+            margin-top: 20px;
+        }
+
+            .table thead th {
+                background-color: #4caf50; /* Verde para el encabezado de la tabla */
+                color: white; /* Texto blanco en el encabezado */
+            }
+
+            .table tbody tr:nth-child(even) {
+                background-color: #f2f6f4; /* Fondo gris claro en filas pares */
+            }
+
+            .table tbody tr:hover {
+                background-color: #d6e9c6; /* Verde claro al pasar el ratón sobre las filas */
+            }
+
+            .table td {
+                vertical-align: middle; /* Alineación vertical central para las celdas */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Asegurado</a>
+            <a asp-action="Upload" class="btn btn-secondary">Cargar Archivo</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var asegurado in Model)
+                {
+                    <tr>
+                        <td>@asegurado.Cedula</td>
+                        <td>@asegurado.Nombre</td>
+                        <td>@asegurado.Telefono</td>
+                        <td>@asegurado.Edad</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@asegurado.AseguradoId" class="btn btn-warning">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@asegurado.AseguradoId" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
